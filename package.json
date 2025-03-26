@@ -7,6 +7,12 @@
     "react-router-dom": "^7.4.0"
   },
   "devDependencies": {
-    "@nestjs/cli": "^11.0.5"
+    "@nestjs/cli": "^11.0.5",
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+    "start": "concurrently "cd Frontend && yarn start" "cd Backend && yarn start"",
+    "dev": "concurrently "cd Frontend && yarn dev" "cd Backend && yarn dev"",
+    "install-all": "concurrently "cd Frontend && yarn install" "cd Backend && yarn install""
   }
 }
